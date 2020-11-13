@@ -1,0 +1,166 @@
+<html >
+<head>
+	<title>Cart Paage</title>
+	<link rel="stylesheet" href="st.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="navbar">
+	<div class="logo">
+		<img src="images/logo2.png" width="150px">
+	</div>
+	<nav>
+		<ul id="MenuItems">
+		   <li><a href="homepage.html">HOME</a></li>
+		   <li><a href="product.html">PRODUCT</a></li>
+		   <li><a href=" ">CONTACT</a></li>
+		   <li><a href=" ">ABOUT</a></li>
+		   <li><a href="">LOGIN</a></li>
+		</ul>
+	</nav>
+	<i class="fa fa-shopping-cart"></i>
+	<div class="menu"><i class="fa fa-bars" onclick="menutoggle()"></i>
+    </div>
+</div>
+<!------- cart Items Details------>
+
+<div class="small-container cart-page">
+	<table>
+		<tr>
+			<th>Product</th>
+		    <th>Quantity</th>
+		    <th>Total</th>
+		  </tr> 
+		  <td>
+		  	<div class="cart-info">
+		  		<img src="images/img1.jpg">
+		  		<div>
+		  			<p>Plain Orange saree</p>
+		  			<small>Price: Rs.499</small>
+		  			<br>
+		  			<a href="">Remove</a>
+		  		</div>
+		  	</div>
+		  </td>
+		  <td><input type="number" name="1"></td>
+		  <td>Rs.499</td>
+		</tr> 
+		  <td>
+		  	<div class="cart-info">
+		  		<img src="images/img2.jpg">
+		  		<div>
+		  			<p>Yellow Plain Saree</p>
+		  			<small>Price: Rs.499</small>
+		  			<br>
+		  			<a href="">Remove</a>
+		  		</div>
+		  	</div>
+		  </td>
+		  <td><input type="number" name="1"></td>
+		  <td>Rs.499</td>
+		</tr>
+		  <td>
+		  	<div class="cart-info">
+		  		<img src="images/img3.jpg">
+		  		<div>
+		  			<p>White & Red Saree</p>
+		  			<small>Price: Rs.499</small>
+		  			<br>
+		  			<a href="">Remove</a>
+		  		</div>
+		  	</div>
+		  </td>
+		  <td><input type="number" name="1"></td>
+		  <td>Rs.750</td>
+		</tr> 
+		  <td>
+		  	<div class="cart-info">
+		  		<img src="images/img4.jpg">
+		  		<div>
+		  			<p>Silk Orage Saree</p>
+		  			<small>Price: Rs.499</small>
+		  			<br>
+		  			<a href="">Remove</a>
+		  		</div>
+		  	</div>
+		  </td>
+		  <td><input type="number" name="1"></td>
+		  <td>Rs.1999</td>
+		</tr>
+	</table>
+<div class="total-price">
+	<table><tr>
+		       <td>Subtotal</td>
+		       <td>Rs.499</td>
+	       </tr>
+	       <tr>
+		       <td>Tax</td>
+		       <td>Rs.50</td>
+	       </tr>
+	       <tr>
+		       <td>Total</td>
+		       <td>Rs.549</td>
+	       </tr>
+	</table>
+<div class="Proceed to checkout">
+	
+</div>	
+
+</div>	
+</div>
+
+<!-------- Footer -------------------->
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+				<h3>Download Our App</h3>
+				<p>Download App for Android Mobile Phone.</p>
+			</div>
+			<div class="footer-col-2">
+				<img src="images/logo2.png">
+			</div>
+			<div class="footer-col-3">
+				<h3>Useful Link</h3>
+				<ul>
+				    <li>Blog</li>
+					<li>Coupons</li>
+					<li>Return Policy</li>
+				</ul>
+			</div>
+			<div class="footer-col-4">
+				<h3>Follow Us</h3>
+				<ul>
+				    <li>Twitter</li>
+					<li>Facebook</li>
+					<li>Instagram</li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+</div>
+</div>
+
+
+<!----- menu ----->
+<script>
+var MenuItems = document.getElementsById("MenuItems");
+MenuItems.style.maxHeight = "0px";
+function menutoggle() {
+	if (MenuItems.style.maxHeight == "0px") {
+             MenuItems.style.maxHeight = "200px";
+	}
+
+else{
+	MenuItems.style.maxHeight = "0px";
+    }	
+}
+</script>
+</body>
+</html>
